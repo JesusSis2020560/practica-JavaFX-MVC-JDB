@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="superKinalIN5CMS.jnlp">
+  <information>
+    <title>superKinalIN5CMS</title>
+    <vendor>Jesus Sis</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mysql-connector-java-8.0.12.jar" size="2020431" download="eager" />
+    <jar href="superKinalIN5CMS.jar" size="471127" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="superKinalIN5CMS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="org.jesussis.system.Main"  name="superKinalIN5CMS" />
+  <update check="always"/>
+</jnlp>

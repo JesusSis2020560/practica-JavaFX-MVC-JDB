@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jesussis.controller.MenuTicketSoporteController">
+   <children>
+      <ImageView fx:id="cmbFactura" fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/MenuTicketSoporte.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="taDescripcion" layoutX="10.0" layoutY="350.0" prefHeight="145.0" prefWidth="264.0" />
+      <ComboBox fx:id="cmbEstatus" layoutX="14.0" layoutY="545.0" prefHeight="25.0" prefWidth="216.0" />
+      <Button fx:id="btnGuardar" layoutX="16.0" layoutY="583.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="124.0" text="Guardar" />
+      <Button fx:id="btnVaciar" layoutX="144.0" layoutY="583.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="124.0" text="Vaciar Form" />
+      <Button fx:id="btnRegresar" layoutX="14.0" layoutY="647.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="264.0" text="Regresar" />
+      <ComboBox fx:id="cmbCliente" layoutX="362.0" layoutY="239.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbFactura" layoutX="759.0" layoutY="239.0" prefWidth="150.0" />
+      <TableView fx:id="tblTickets" layoutX="437.0" layoutY="308.0" prefHeight="344.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="colTicketId" prefWidth="85.0" text="Ticket Id" />
+          <TableColumn fx:id="colDescripcion" prefWidth="240.0" text="Descripción" />
+            <TableColumn fx:id="colEstatus" prefWidth="132.0" text="Estatus" />
+            <TableColumn fx:id="colCliente" prefWidth="118.0" text="Clientes" />
+            <TableColumn fx:id="colFacturaId" prefWidth="101.0" text="FacturaId" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfTicketId" layoutX="14.0" layoutY="239.0" />
+   </children>
+</AnchorPane>
